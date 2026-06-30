@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="253.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.trasnferircontroller">
+   <children>
+      <Label layoutX="62.0" layoutY="21.0" text="Realizar Trasnferencia">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="67.0" text="Numero de cuenta:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="104.0" text="Monto a tranferir">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="139.0" text="Categoria">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="112.0" layoutY="172.0" mnemonicParsing="false" onAction="#Tranferir" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #00807a;" text="Tranferir">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtNumeroCuenta" layoutX="162.0" layoutY="65.0" />
+      <TextField fx:id="txtMontoTransferir" layoutX="161.0" layoutY="101.0" />
+      <ComboBox fx:id="cbxCategoria" layoutX="161.0" layoutY="136.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
